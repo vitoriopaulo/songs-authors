@@ -29,6 +29,7 @@ NOTE: There are lots more, but let's start with these!
 -  Contact info (email, LinkedIn, GitHub, city)
 -  Resume view & download
 -  Showcase your GA projects (more details below)
+-  Blog posts (2-4) — Link to a medium account, or these could be built in native to the app if you really want bonus points!
 
 ### Optional Sections:
 
@@ -37,7 +38,6 @@ NOTE: There are lots more, but let's start with these!
 -  Additional work samples (visual design, writing samples, a link to your photography blog)
 -  Social profiles if relevant (Twitter, instagram, if they highlight you professionally, not just what your meals look like)
 -  Could include phone number and mailing address, but not necessary
--  Blog posts (2-4) — Link to a medium account, or these could be built in native to the app if you really want bonus points!
 
 ## Notes on highlighting your GA projects:
 
@@ -90,8 +90,9 @@ Outcomes. If your question is "Is it appropriate to put a photo of me passed out
 -   Other WDI Grads's Portfolios:
   -  http://rhjones.me/
   -  http://gabescarbrough.com/
-  -  http://nicolasogarcia.com/
-  -  http://robertruttenberg.com/
+  -  https://nriser.github.io/portfolio/
+  -  https://jbculbertson.github.io/
+  -  https://coreyfedde.github.io/portfolio/
   -  http://cathyobrien.co
 
 ## [License](LICENSE)
