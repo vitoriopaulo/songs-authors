@@ -37,7 +37,7 @@ NOTE: There are lots more, but let's start with these!
 -  Additional work samples (visual design, writing samples, a link to your photography blog)
 -  Social profiles if relevant (Twitter, instagram, if they highlight you professionally, not just what your meals look like)
 -  Could include phone number and mailing address, but not necessary
--  Blog posts (2-4) — Link to a medium account, or these could be built in native to the app if you really want bonus points!
+- Blog posts (2-4) — Link to a medium account, or these could be built in native to the app if you really want bonus points!
 
 ## Notes on highlighting your GA projects:
 
@@ -55,7 +55,7 @@ If you’ve got design chops, use them. You have an opportunity to impress a wid
 If you are not a strong designer, that’s okay too! Don’t try to be something that you’re not on this site. Keep your design simple, or mock up your site based off of another site you have seen that looks great. Get feedback from colleagues (especially non-developers and non-designers) to make sure it doesn’t look terrible. Keep it neutral and focus on producing good projects.
 
 ### Save Us From Design!
-We highly recommend you use [Bootstrap](http://getbootstrap.com/css/), [Materialize](http://materializecss.com/), or [Foundation(http://foundation.zurb.com/sites/docs/v/5.5.3/css.html)] to aid with
+We highly recommend you use [Bootstrap](http://getbootstrap.com/css/), [Materialize](http://materializecss.com/), or [Foundation](http://foundation.zurb.com/sites/docs/v/5.5.3/css.html) to aid with
 the design of your portfolio. Choose one, and start adding features to your site!
 This doesn't mean you can't change in the future, but do some research and pick
 which ever one you like best!
@@ -71,7 +71,7 @@ which ever one you like best!
 
 ## A Quick Note on Technology
 
-As you may know by now, in WDI we'll use [browser-template](https://github.com/ga-wdi-boston/browser-template) to create
+As you may know by now, in WDI we'll use [browser-template](https://git.generalassemb.ly/ga-wdi-boston/browser-template) to create
 web apps. However, since these portfolios typically won't have the same
 robust functionality, we've included simple index.html, index.js, and main.css
 files to get started without the added complexity of a webpack build.
@@ -83,15 +83,16 @@ also a donut fanatic on my portfolio page?" you should direct that towards
 Outcomes. If your question is "Is it appropriate to put a photo of me passed out
  at a bar?" the answer is "No." If your question is "Cannot read property of
  `undefined` you probably want to see what is to the left of the `.` and then
- open an issue [here](https://github.com/ga-wdi-boston/portfolio-template/issues).
+ open an issue [here](https://git.generalassemb.ly/ga-wdi-boston/portfolio-template/issues).
 
 ## Additional Resources
 
 -   Other WDI Grads's Portfolios:
   -  http://rhjones.me/
   -  http://gabescarbrough.com/
-  -  http://nicolasogarcia.com/
-  -  http://robertruttenberg.com/
+  -  https://nriser.github.io/portfolio/
+  -  https://jbculbertson.github.io/
+  -  https://coreyfedde.github.io/portfolio/
   -  http://cathyobrien.co
 
 ## [License](LICENSE)
