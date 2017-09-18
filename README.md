@@ -71,7 +71,7 @@ which ever one you like best!
 
 ## A Quick Note on Technology
 
-As you may know by now, in WDI we'll use [browser-template](https://github.com/ga-wdi-boston/browser-template) to create
+As you may know by now, in WDI we'll use [browser-template](https://git.generalassemb.ly/ga-wdi-boston/browser-template) to create
 web apps. However, since these portfolios typically won't have the same
 robust functionality, we've included simple index.html, index.js, and main.css
 files to get started without the added complexity of a webpack build.
@@ -83,7 +83,7 @@ also a donut fanatic on my portfolio page?" you should direct that towards
 Outcomes. If your question is "Is it appropriate to put a photo of me passed out
  at a bar?" the answer is "No." If your question is "Cannot read property of
  `undefined` you probably want to see what is to the left of the `.` and then
- open an issue [here](https://github.com/ga-wdi-boston/portfolio-template/issues).
+ open an issue [here](https://git.generalassemb.ly/ga-wdi-boston/portfolio-template/issues).
 
 ## Additional Resources
 
