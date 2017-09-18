@@ -55,7 +55,7 @@ If you’ve got design chops, use them. You have an opportunity to impress a wid
 If you are not a strong designer, that’s okay too! Don’t try to be something that you’re not on this site. Keep your design simple, or mock up your site based off of another site you have seen that looks great. Get feedback from colleagues (especially non-developers and non-designers) to make sure it doesn’t look terrible. Keep it neutral and focus on producing good projects.
 
 ### Save Us From Design!
-We highly recommend you use [Bootstrap](http://getbootstrap.com/css/), [Materialize](http://materializecss.com/), or [Foundation(http://foundation.zurb.com/sites/docs/v/5.5.3/css.html)] to aid with
+We highly recommend you use [Bootstrap](http://getbootstrap.com/css/), [Materialize](http://materializecss.com/), or [Foundation](http://foundation.zurb.com/sites/docs/v/5.5.3/css.html) to aid with
 the design of your portfolio. Choose one, and start adding features to your site!
 This doesn't mean you can't change in the future, but do some research and pick
 which ever one you like best!
