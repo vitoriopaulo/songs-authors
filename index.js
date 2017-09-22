@@ -1,31 +1,11 @@
-$(() => {
-  	$('a[href^="#"]').on('click',function (e) {
-  	    e.preventDefault();
+'use strict'
 
-  	    var target = this.hash;
-  	    var $target = $(target);
+// user require with a reference to bundle the file and use it in this file
+// var example = require('./example');
 
-  	    $('html, body').stop().animate({
-  	        'scrollTop': $target.offset().top
-  	    }, 900, 'swing', function () {
-  	        window.location.hash = target
-  	    })
-  	})
-})
+// load manifests
+// scripts
+require('./assets/scripts/index.js')
 
-// Imported from my codepen.io Account //
-
-// $(document).ready(function(){
-// 	$('a[href^="#"]').on('click',function (e) {
-// 	    e.preventDefault();
-//
-// 	    var target = this.hash;
-// 	    var $target = $(target);
-//
-// 	    $('html, body').stop().animate({
-// 	        'scrollTop': $target.offset().top
-// 	    }, 900, 'swing', function () {
-// 	        window.location.hash = target;
-// 	    });
-// 	});
-// });
+// styles
+require('./assets/styles/index.scss')

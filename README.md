@@ -1,99 +1,58 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Portfolio Template
+# browser-template
 
-Use this template to structure your Portfolios.
-
-## Objectives
-
-By the end of this, developers should be able to:
--  Have something to show to potential future employers/recruiters/friends
--  Work on a portfolio and implement more and more features throughout WDI
-
-## Why?
-
-It's important that you begin thinking about what you want your online presence to look like. What do you want people to find when they google you? What do you want people's first impression of you to be when they visit the url on your business card?
-
-## User Stories to Get Started With
-
--  As a non-technical HR manager, I want to quickly evaluate whether this candidate has the skills and experience to fill an open position at my company.
--  As a mid-level engineer, I want to evaluate a junior developer’s coding skills by reviewing their projects and reading their code.
--  As a friend of the person who built this portfolio, I want to understand what they do as a developer and what they have created.
-
-NOTE: There are lots more, but let's start with these!
-
-## Requirements:
-
--  About Me: Short blurb explaining who you are, and some background info
--  Skills: All the skills you have that may be helpful on the job
--  Contact info (email, LinkedIn, GitHub, city)
--  Resume view & download
--  Showcase your GA projects (more details below)
-
-### Optional Sections:
-
--  Personal hobbies/interests
--  Professional Timeline (a visual representation of your work history)
--  Additional work samples (visual design, writing samples, a link to your photography blog)
--  Social profiles if relevant (Twitter, instagram, if they highlight you professionally, not just what your meals look like)
--  Could include phone number and mailing address, but not necessary
-- Blog posts (2-4) — Link to a medium account, or these could be built in native to the app if you really want bonus points!
-
-## Notes on highlighting your GA projects:
-
--  Include links to live site as well as front-end and back-end repos
--  Describe both the functionality of the site as well as what technologies you used to build it.
--  Talk about your process for building this app. If you have a blog post that goes into detail for each project, link to that post.
--  As you add your GA projects to your portfolio, make sure they are user-friendly to an unacquainted visitor.
--  The home page should explain the site’s functionality
--  Random users might not want to sign up/sign in. You should either put dummy credentials on the homepage that they can use (and explain that), or make sure they can interact with the site without signing up.
--  Clean up the data you’ve entered on the site as you were testing it.
-
-### A Quick Note About Design:
-
-If you’ve got design chops, use them. You have an opportunity to impress a wide audience with both your coding skills and your design abilities with this site.
-If you are not a strong designer, that’s okay too! Don’t try to be something that you’re not on this site. Keep your design simple, or mock up your site based off of another site you have seen that looks great. Get feedback from colleagues (especially non-developers and non-designers) to make sure it doesn’t look terrible. Keep it neutral and focus on producing good projects.
-
-### Save Us From Design!
-We highly recommend you use [Bootstrap](http://getbootstrap.com/css/), [Materialize](http://materializecss.com/), or [Foundation](http://foundation.zurb.com/sites/docs/v/5.5.3/css.html) to aid with
-the design of your portfolio. Choose one, and start adding features to your site!
-This doesn't mean you can't change in the future, but do some research and pick
-which ever one you like best!
+A template for starting front-end projects. Webpack for `require` system, build
+pipeline, and development server. Boostrap and Handlebars.js included. No
+front-end frameworks included.
 
 ## Installation
 
 1.  [Download](../../archive/master.zip) this template.
 1.  Unzip and rename the template directory.
 1.  Empty [`README.md`](README.md) and fill with your own content.
-1.  Move into the new project and `git init`.
-1.  Follow the instructions here: [documentation](https://pages.github.com/)
-1.  Use gh repository as the remote for your portfolio
+1.  Replace all instances of `songs-and-authors` with the name of your project.
+1.  Move into the new project and `git init`
+1.  Add all of the files in your project with the command `git add -A`
+  -   *Note:* THIS IS THE ONLY TIME YOU SHOULD RUN THIS COMMAND
+1.  Commit all of your files with the command `git commit`
+  -   Your commit title should read `Initial commit`
+1.  Install dependencies with `npm install`.
 
-## A Quick Note on Technology
+## Structure
 
-As you may know by now, in WDI we'll use [browser-template](https://git.generalassemb.ly/ga-wdi-boston/browser-template) to create
-web apps. However, since these portfolios typically won't have the same
-robust functionality, we've included simple index.html, index.js, and main.css
-files to get started without the added complexity of a webpack build.
+Developers should store JavaScript files in [`assets/scripts`](assets/scripts).
+The "manifest" or entry-point is
+[`assets/scripts/index.js`](assets/scripts/index.js). In general, only
+application initialization goes in this file. It's normal for developers to
+start putting all code in this file, but encourage them to break out different
+responsibilities and use the `require` syntax put references where they're
+needed.
 
-## But What if I Have Questions!?
+Developers should set `config.apiOrigins.production` (and
+`config.apiOrigins.development` if it differs from the default).  With
+`apiOrigins` set, developers may rely on `config.apiOrigin` as the base for API
+URLs.
 
-Technical or non-technical? If your question is "Is it helpful to show that I'm
-also a donut fanatic on my portfolio page?" you should direct that towards
-Outcomes. If your question is "Is it appropriate to put a photo of me passed out
- at a bar?" the answer is "No." If your question is "Cannot read property of
- `undefined` you probably want to see what is to the left of the `.` and then
- open an issue [here](https://git.generalassemb.ly/ga-wdi-boston/portfolio-template/issues).
+Developers should store styles in [`assets/styles`](assets/styles) and load them
+from [`assets/styles/index.scss`](assets/styles/index.scss).
 
-## Additional Resources
+Developers should use [getFormFields](forms.md) to retrieve form data to send to
+an API.
 
--   Other WDI Grads's Portfolios:
-  -  http://rhjones.me/
-  -  http://gabescarbrough.com/
-  -  https://nriser.github.io/portfolio/
-  -  https://jbculbertson.github.io/
-  -  https://coreyfedde.github.io/portfolio/
-  -  http://cathyobrien.co
+To deploy a browser-template based SPA, run `grunt deploy`.
+
+## Tasks
+
+Developers should run these often!
+
+-   `grunt nag` or just `grunt`: runs code quality analysis tools on your code
+    and complains
+-   `grunt make-standard`: reformats all your code in the JavaScript Standard Style
+-   `grunt <server|serve|s>`: generates bundles, watches, and livereloads
+-   `grunt test`: runs any automated tests, depends on `grunt build`
+-   `grunt build`: place bundled styles and scripts where `index.html` can find
+    them
 
 ## [License](LICENSE)
 
