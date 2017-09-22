@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>SONGS & AUTHORS DATABASE </title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -11,15 +11,156 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
-    <body class="container-fluid">
-      <h1>Example</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
+    <body class="container-fluid">
+
+<header>
+
+  <h1 class="title"> SONGS & AUTHORS </h1>
+
+</header>
+<br>
+<br>
+<br>
+<br>
+<!-- part of the code related to authentication -->
+
+<p id="message" class="message"> </p>
+<br>
+<br>
+      <form class="starting-page" id="sign-up">
+        <fieldset>
+          <legend>Sign up!</legend>
+          <input type="email" name="credentials[email]" placeholder="Your email here." class="my-input">
+          <br>
+          <br>
+          <input type="password" name="credentials[password]" placeholder="Your password here." class="my-input">
+          <br>
+          <br>
+          <input type="password" name="credentials[password_confirmation]" placeholder="Confirm password." class="my-input">
+          <br>
+          <br>
+          <button type="submit" name="submit" value="submit" class="btn btn-default button1">
+            Sign Up!</button>
+        </fieldset>
+      </form>
+
+      <br>
+      <br>
+
+      <form class="starting-page" id="sign-in">
+        <fieldset>
+          <legend>Sign In!</legend>
+          <input type="email" name="credentials[email]" placeholder="Your email here." class="my-input">
+          <br>
+          <br>
+          <input type="password" name="credentials[password]" placeholder="Your password here." class="my-input">
+          <br>
+          <br>
+          <button id="bt-sign-in" type="submit" name="submit" value="submit" class="btn btn-default button2">
+            Sign In!</button>
+        </fieldset>
+      </form>
+
+      <br>
+      <br>
+
+      <button type="submit" name="submit" value="Type song title here." class="btn btn-default button5 signed-in-page" id="get-all-my-songs">
+        Get all my songs.</button>
+
+      <br>
+      <br>
+
+      <form class="signed-in-page" id="get-song-by-id">
+              <fieldset>
+                <legend>Get one Song</legend>
+                <input type="text" name="song" placeholder="Type song id here." class="my-input">
+                <br>
+                <br>
+                <button type="submit" name="submit" value="Type song author here." class="btn btn-default button5">
+                  Get one Song</button>
+              </fieldset>
+            </form>
+      <br>
+      <br>
+
+      <form class="signed-in-page" id="add-song">
+              <fieldset>
+                <legend>Add Song</legend>
+                <input type="text" name="song" placeholder="Type song title here." class="my-input">
+                <br>
+                <br>
+                <input type="text" name="author" placeholder="Type song authors here." class="my-input">
+                <br>
+                <br>
+                <input type="text" name="year" placeholder="Type song year here." class="my-input">
+                <br>
+                <br>
+                <button type="submit" name="submit" value="Add song to data-base." class="btn btn-default button5">
+                  Add Song</button>
+              </fieldset>
+            </form>
+      <br>
+      <br>
+
+      <form class="signed-in-page" id="update-song">
+              <fieldset>
+                <legend>Update Song</legend>
+                <input type="text" name="song" placeholder="Type song id here." class="my-input">
+                <br>
+                <br>
+                <input type="text" name="author" placeholder="Update song title here." class="my-input">
+                <br>
+                <br>
+                <input type="text" name="year" placeholder="Update song year here." class="my-input">
+                <br>
+                <br>
+                <input type="text" name="year" placeholder="Update song author here." class="my-input">
+                <br>
+                <br>
+                <button type="submit" name="submit" value="Update song to data-base." class="btn btn-default button5">
+                  Update Song</button>
+              </fieldset>
+            </form>
+      <br>
+      <br>
+
+      <form class="signed-in-page" id="delete-song">
+              <fieldset>
+                <legend>Delete Song</legend>
+                <input type="text" name="song-delete" placeholder="Type song id here." class="my-input">
+            <br>
+            <br>
+                <button type="submit" name="submit" value="Delete song from database" class="btn btn-default button5">
+                  Delete Song</button>
+              </fieldset>
+            </form>
+<br>
+<br>
+
+<form class="signed-in-page" id="change-password">
+        <fieldset>
+          <legend>Change Password</legend>
+          <input type="password" name="passwords[old]" placeholder="Old password here." class="my-input">
+          <br>
+          <br>
+          <input type="password" name="passwords[new]" placeholder="New password here." class="my-input">
+          <br>
+          <br>
+          <button type="submit" name="submit" value="Change Password!" class="btn btn-default button5">
+            Change Password</button>
+        </fieldset>
+      </form>
+
+<br>
+<br>
+
+      <button type="submit" name="submit" value="Sign Out!" class="btn btn-default button4">
+                Sign Out!</button>
+<br>
+<br>
+
+<footer class="footer"> <p class="copyright"> Copyright 2017 :: Created with much &hearts;
+  by Vitorio Paulo for GA</p> </footer>
     </body>
 </html>

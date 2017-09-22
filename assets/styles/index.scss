@@ -1,2 +1,110 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+header {
+  // max-width: 600px;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: center;
+  background: url('https://static.pexels.com/photos/164828/pexels-photo-164828.jpeg');
+  background-size: cover;
+  color: rgb(188, 19, 203);
+  padding: 30px 20px 30px 20px;
+}
+
+.title {
+  font-size: 64px;
+  font-family: 'Monoton', cursive;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+html, body {
+  max-height: 2400px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: rgb(75, 75, 75);
+}
+
+input {
+   text-align: center;
+   color: rgb(188, 19, 203);
+}
+
+.message {
+  color: rgb(205, 0, 203);
+  font-family: 'Montserrat', cursive;
+  font-size: 18px;
+  text-align: center;
+}
+
+h3, h4 {
+  color: black;
+  font-family: 'Montserrat', cursive;
+  font-size: 18px;
+}
+
+.my-input {
+  background-color: black;
+  width: 440px;
+  height: 45px;
+  font-size: 'Montserrat', cursive;
+  font-size: 18px;
+  border: none;
+}
+
+.button1 {
+  background-color: rgb(202, 111, 255);
+  text-align: center;
+  margin: 0 auto;
+  width: 440px;
+}
+
+.button2 {
+  background-color: rgb(202, 111, 255);
+  text-align: center;
+  margin: 0 auto;
+  width: 440px;
+}
+
+.button3 {
+  background-color: rgb(202, 111, 255);
+  text-align: center;
+  margin: 0 auto;
+  width: 440px;
+}
+
+.button4 {
+  background-color: rgb(202, 111, 255);
+  text-align: center;
+  margin: 0 auto;
+  width: 440px;
+}
+
+.button5 {
+  background-color: rgb(202, 111, 255);
+  text-align: center;
+  margin: 0 auto;
+  width: 440px;
+}
+
+footer {
+  max-height: 300px;
+  font-size: 18px;
+  font-family: 'Montserrat', cursive;
+  // margin: 0;
+  background-color: black;
+  color: rgb(220, 255, 48);
+  padding: 12px;
+}
+
+.copyright {
+  color: rgb(188, 19, 203);
+  font-family: 'Montserrat', cursive;
+  font-size: 36px;
+}
