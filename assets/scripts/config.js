@@ -2,7 +2,7 @@
 
 const config = {
   apiOrigins: {
-    production: 'https://git.heroku.com/calm-plains-79729.git'
+    production: 'https://git.heroku.com/songs-and-authors.git'
   }
 }
 
