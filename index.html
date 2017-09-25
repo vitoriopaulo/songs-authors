@@ -31,13 +31,13 @@
       <form class="starting-page" id="sign-up">
         <fieldset>
           <legend>Sign up!</legend>
-          <input type="email" name="credentials[email]" placeholder="Your email here." class="my-input">
+          <input type="email" name="credentials[email]" placeholder="Your email here." class="my-input" autocomplete="off">
           <br>
           <br>
-          <input type="password" name="credentials[password]" placeholder="Your password here." class="my-input">
+          <input type="password" name="credentials[password]" placeholder="Your password here." class="my-input" autocomplete="off">
           <br>
           <br>
-          <input type="password" name="credentials[password_confirmation]" placeholder="Confirm password." class="my-input">
+          <input type="password" name="credentials[password_confirmation]" placeholder="Confirm password." class="my-input" autocomplete="off">
           <br>
           <br>
           <button type="submit" name="submit" value="submit" class="btn btn-default button1">
@@ -51,10 +51,10 @@
       <form class="starting-page" id="sign-in">
         <fieldset>
           <legend>Sign In!</legend>
-          <input type="email" name="credentials[email]" placeholder="Your email here." class="my-input">
+          <input type="email" name="credentials[email]" placeholder="Your email here." class="my-input" autocomplete="off">
           <br>
           <br>
-          <input type="password" name="credentials[password]" placeholder="Your password here." class="my-input">
+          <input type="password" name="credentials[password]" placeholder="Your password here." class="my-input" autocomplete="off">
           <br>
           <br>
           <button id="bt-sign-in" type="submit" name="submit" value="submit" class="btn btn-default button2">
@@ -74,7 +74,7 @@
       <form class="signed-in-page" id="get-song-by-id">
               <fieldset>
                 <legend>Get one Song</legend>
-                <input type="text" name="song" placeholder="Type song id here." class="my-input">
+                <input type="text" name="song" placeholder="Type song id here." class="my-input" autocomplete="off">
                 <br>
                 <br>
                 <button type="submit" name="submit" value="Type song author here." class="btn btn-default button5">
@@ -87,13 +87,13 @@
       <form class="signed-in-page" id="add-song">
               <fieldset>
                 <legend>Add Song</legend>
-                <input type="text" name="song" placeholder="Type song title here." class="my-input">
+                <input type="text" name="song" placeholder="Type song title here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <input type="text" name="author" placeholder="Type song authors here." class="my-input">
+                <input type="text" name="author" placeholder="Type song authors here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <input type="text" name="year" placeholder="Type song year here." class="my-input">
+                <input type="text" name="year" placeholder="Type song year here." class="my-input" autocomplete="off">
                 <br>
                 <br>
                 <button type="submit" name="submit" value="Add song to data-base." class="btn btn-default button5">
@@ -106,16 +106,13 @@
       <form class="signed-in-page" id="update-song">
               <fieldset>
                 <legend>Update Song</legend>
-                <input type="text" name="song" placeholder="Type song id here." class="my-input">
+                <input type="text" name="song" placeholder="Type song id here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <input type="text" name="author" placeholder="Update song title here." class="my-input">
+                <input type="text" name="author" placeholder="Update song title here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <input type="text" name="year" placeholder="Update song year here." class="my-input">
-                <br>
-                <br>
-                <input type="text" name="year" placeholder="Update song author here." class="my-input">
+                <input type="text" name="year" placeholder="Update song year here." class="my-input" autocomplete="off">
                 <br>
                 <br>
                 <button type="submit" name="submit" value="Update song to data-base." class="btn btn-default button5">
@@ -128,7 +125,7 @@
       <form class="signed-in-page" id="delete-song">
               <fieldset>
                 <legend>Delete Song</legend>
-                <input type="text" name="song-delete" placeholder="Type song id here." class="my-input">
+                <input type="text" name="song-delete" placeholder="Type song id here." class="my-input" autocomplete="off">
             <br>
             <br>
                 <button type="submit" name="submit" value="Delete song from database" class="btn btn-default button5">
@@ -141,10 +138,10 @@
 <form class="signed-in-page" id="change-password">
         <fieldset>
           <legend>Change Password</legend>
-          <input type="password" name="passwords[old]" placeholder="Old password here." class="my-input">
+          <input type="password" name="passwords[old]" placeholder="Old password here." class="my-input" autocomplete="off">
           <br>
           <br>
-          <input type="password" name="passwords[new]" placeholder="New password here." class="my-input">
+          <input type="password" name="passwords[new]" placeholder="New password here." class="my-input" autocomplete="off">
           <br>
           <br>
           <button type="submit" name="submit" value="Change Password!" class="btn btn-default button5">
@@ -155,8 +152,13 @@
 <br>
 <br>
 
-      <button type="submit" name="submit" value="Sign Out!" class="btn btn-default button4">
-                Sign Out!</button>
+<form class="signed-in-page" id="sign-out">
+  <fieldset>
+    <button type="submit" name="submit" value="Sign Out!" class="btn btn-default button4">
+      Sign Out!</button>
+</fieldset>
+</form>
+
 <br>
 <br>
 
