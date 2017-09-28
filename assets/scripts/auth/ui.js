@@ -17,6 +17,8 @@ const signUpFailure = function (error) {
 const signInSuccess = function (data) {
   $('.signed-in-page').show()
   $('.starting-page').hide()
+  $('#songs').hide()
+  $('#song').hide()
   $('.box').hide()
   $('.my-input').val("")
   // $('#sign-up').reset()
@@ -49,6 +51,8 @@ const changePasswordFailure = function (error) {
 const signOutSuccess = function (data) {
   $('.starting-page').show()
   $('.signed-in-page').hide()
+  $('#songs').hide()
+  $('#song').hide()
   console.log(data)
   store.user = null
   // console.log('Signed out succesfully!')

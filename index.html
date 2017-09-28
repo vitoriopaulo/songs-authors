@@ -71,6 +71,21 @@
                   Get all Songs</button>
               </fieldset>
             </form>
+          <br>
+
+
+      <!-- <form class="signed-in-page" id="hide-all-songs">
+              <fieldset>
+                <button type="reset" name="reset" value="Hide all songs." class="btn btn-default button5">
+                        Hide all Songs</button>
+              </fieldset>
+            </form>
+          <br> -->
+
+
+      <ul class="signed-in-page" id="songs">
+      </ul>
+
       <br>
       <br>
 
@@ -80,26 +95,31 @@
                 <input type="text" name="song" placeholder="Type song id here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <button type="submit" name="submit" value="Type song author here." class="btn btn-default button5">
+                <button type="submit" class="btn btn-default button5">
                   Get one Song</button>
               </fieldset>
             </form>
       <br>
       <br>
 
+      <ul class="signed-in-page" id="song">
+
+      </ul>
+      <br>
+
       <form class="signed-in-page" id="add-song">
               <fieldset>
                 <legend>Add Song</legend>
-                <input type="text" name="song" placeholder="Type song title here." class="my-input" autocomplete="off">
+                <input type="text" name="song[title]" placeholder="Type song title here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <input type="text" name="author" placeholder="Type song authors here." class="my-input" autocomplete="off">
+                <input type="number" name="song[year]" placeholder="Type song year here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <input type="text" name="year" placeholder="Type song year here." class="my-input" autocomplete="off">
+                <input type="text" name="song[authors]" placeholder="Type song authors here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <button type="submit" name="submit" value="Add song to data-base." class="btn btn-default button5">
+                <button type="submit" class="btn btn-default button5">
                   Add Song</button>
               </fieldset>
             </form>
@@ -109,19 +129,19 @@
       <form class="signed-in-page" id="update-song">
               <fieldset>
                 <legend>Update Song</legend>
-                <input type="text" name="song" placeholder="Type song id here." class="my-input" autocomplete="off">
+                <input type="number" name="song[id]" placeholder="Type song id here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <input type="text" name="title" placeholder="Update song title here." class="my-input" autocomplete="off">
+                <input type="text" name="song[title]" placeholder="Update song title here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <input type="text" name="year" placeholder="Update song year here." class="my-input" autocomplete="off">
+                <input type="number" name="song[year]" placeholder="Update song year here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <input type="text" name="authors" placeholder="Update song authors here." class="my-input" autocomplete="off">
+                <input type="text" name="song[authors]" placeholder="Update song authors here." class="my-input" autocomplete="off">
                 <br>
                 <br>
-                <button type="submit" name="submit" value="Update song to data-base." class="btn btn-default button5">
+                <button type="submit" class="btn btn-default button5">
                   Update Song</button>
               </fieldset>
             </form>
@@ -131,10 +151,10 @@
       <form class="signed-in-page" id="delete-song">
               <fieldset>
                 <legend>Delete Song</legend>
-                <input type="text" name="song-delete" placeholder="Type song id here." class="my-input" autocomplete="off">
+                <input type="number" name="song[id]" placeholder="Type song id here." class="my-input" autocomplete="off">
             <br>
             <br>
-                <button type="submit" name="submit" value="Delete song from database" class="btn btn-default button5">
+                <button type="submit" class="btn btn-default button5">
                   Delete Song</button>
               </fieldset>
             </form>

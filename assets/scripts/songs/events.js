@@ -14,6 +14,7 @@ const onGetAllSongs = function (event) {
 
 const onGetOneSong = function (event) {
   const data = getFormFields(this)
+  console.log(data.song)
   event.preventDefault()
   api.getOneSong(data)
     .then(ui.getOneSongSuccess)
@@ -39,7 +40,7 @@ const onUpdateSong = function (event) {
 const onDeleteSong = function (event) {
   const data = getFormFields(this)
   event.preventDefault()
-  api.addSong(data)
+  api.deleteSong(data)
     .then(ui.deleteSongSuccess)
     .catch(ui.deleteSongFailure)
 }
