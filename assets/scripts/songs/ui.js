@@ -82,7 +82,7 @@ const updateSongFailure = function (data) {
 const deleteSongSuccess = function (data) {
   // console.log(data.song)
   $('.my-input').val("")
-  data.song.id = null
+  data.song = null
   // console.log('Signed out succesfully!')
   $('#message').text('Song successfully deleted.')
 }

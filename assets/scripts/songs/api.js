@@ -29,9 +29,9 @@ const addSong = function (data) {
   return $.ajax({
     url: config.apiOrigin + '/songs',
     method: 'POST',
-    // headers: {
-    //   Authorization: 'Token token=' + store.user.token
-    // },
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
     data
   })
 }
@@ -41,9 +41,9 @@ const updateSong = function (data) {
   return $.ajax({
     url: config.apiOrigin + '/songs/' + data.song.id,
     method: 'PATCH',
-    // headers: {
-    //   Authorization: 'Token token=' + store.user.token
-    // },
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
     data
   })
 }
@@ -53,9 +53,9 @@ const deleteSong = function (data) {
   return $.ajax({
     url: config.apiOrigin + '/songs/' + data.song.id,
     method: 'DELETE',
-    // headers: {
-    //   Authorization: 'Token token=' + store.user.token
-    // },
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
     data
   })
 }
