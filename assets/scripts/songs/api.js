@@ -6,10 +6,9 @@ const getAllSongs = function (data) {
   return $.ajax({
     url: config.apiOrigin + '/songs',
     method: 'GET',
-    // headers: {
-    //   Authorization: 'Token token=' + store.user.token
-    // },
-    data
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
   })
 }
 
@@ -18,10 +17,9 @@ const getOneSong = function (data) {
   return $.ajax({
     url: config.apiOrigin + '/songs/' + data.song,
     method: 'GET',
-    // headers: {
-    //   Authorization: 'Token token=' + store.user.token
-    // }
-    data
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
   })
 }
 
@@ -55,8 +53,7 @@ const deleteSong = function (data) {
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token
-    },
-    data
+    }
   })
 }
 

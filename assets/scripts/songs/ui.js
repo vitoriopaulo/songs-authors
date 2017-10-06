@@ -38,7 +38,7 @@ const getOneSongSuccess = function (data) {
 
   $('#song').show()
 
-  $("#song").append("<li><h4>" + data.song.title + "</h4> By " + data.song.authors + ", composed in '<em>" + data.song.year + "</em>'</li>")
+  $("#song").html("<li><h4>" + data.song.title + "</h4> By " + data.song.authors + ", composed in '<em>" + data.song.year + "</em>'</li>")
 
   $('.my-input').val("")
   // console.log(data)
@@ -82,7 +82,6 @@ const updateSongFailure = function (data) {
 const deleteSongSuccess = function (data) {
   // console.log(data.song)
   $('.my-input').val("")
-  data.song = null
   // console.log('Signed out succesfully!')
   $('#message').text('Song successfully deleted.')
 }
