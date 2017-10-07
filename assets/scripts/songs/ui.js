@@ -13,7 +13,7 @@ const getAllSongsSuccess = function (data) {
   $("#songs").html(newHTML)
 
   console.log(data)
-  console.log('Sucessfully get all songs.')
+  // console.log('Sucessfully get all songs.')
   // $('.my-input').val("")
   $('#message').text('Sucessfully get all songs.')
 }
@@ -34,7 +34,7 @@ const getAllSongsFailure = function (error) {
 // }
 
 const getOneSongSuccess = function (data) {
-  console.log('Discovering what is it called data:' + data)
+  // console.log('Discovering what is it called data:' + data)
 
   $('#song').show()
 

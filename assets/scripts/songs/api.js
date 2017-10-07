@@ -8,12 +8,12 @@ const getAllSongs = function (data) {
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token
-    },
+    }
   })
 }
 
 const getOneSong = function (data) {
-  console.log('This is the id of this song: ' + data.song)
+  // console.log('This is the id of this song: ' + data.song)
   return $.ajax({
     url: config.apiOrigin + '/songs/' + data.song,
     method: 'GET',
@@ -35,7 +35,7 @@ const addSong = function (data) {
 }
 
 const updateSong = function (data) {
-  console.log('here what data.song.id is: ' + data.song.id)
+  // console.log('here what data.song.id is: ' + data.song.id)
   return $.ajax({
     url: config.apiOrigin + '/songs/' + data.song.id,
     method: 'PATCH',
@@ -47,7 +47,7 @@ const updateSong = function (data) {
 }
 
 const deleteSong = function (data) {
-  console.log('What is the id of this song being deleted? :' + data.song.id)
+  // console.log('What is the id of this song being deleted? :' + data.song.id)
   return $.ajax({
     url: config.apiOrigin + '/songs/' + data.song.id,
     method: 'DELETE',

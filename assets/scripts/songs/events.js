@@ -14,7 +14,7 @@ const onGetAllSongs = function (event) {
 
 const onGetOneSong = function (event) {
   const data = getFormFields(this)
-  console.log(data.song)
+  // console.log(data.song)
   event.preventDefault()
   api.getOneSong(data)
     .then(ui.getOneSongSuccess)
