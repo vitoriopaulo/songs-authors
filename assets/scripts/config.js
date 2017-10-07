@@ -2,7 +2,7 @@
 
 const config = {
   apiOrigins: {
-    production: 'https://git.heroku.com/songs-and-authors.git',
+    production: 'https://songs-and-authors.herokuapp.com',
     development: 'http://localhost:4741'
   }
 }
