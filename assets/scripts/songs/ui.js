@@ -8,7 +8,7 @@ const getAllSongsSuccess = function (data) {
 
   let newHTML = " "
   store.songs.forEach(function (song) {
-  newHTML += "<li><h4>" + song.title + "</h4> By " + song.authors + ", composed in '<em>" + song.year + "</em>'</li>"
+    newHTML += "<li><h4>" + song.id + '. ' + song.title + "</h4> By " + song.authors + ", composed in '<em>" + song.year + "</em>'</li>"
   })
   $("#songs").html(newHTML)
 
