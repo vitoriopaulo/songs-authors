@@ -5,13 +5,13 @@ const signUpSuccess = function (data) {
   console.log(data)
   // console.log('Sucessfully signed up!')
   $('.my-input').val("")
-  $('#message').text('Sucessfully signed up!')
+  $('#message').show().text('Sucessfully signed up!').fadeOut(5000)
 }
 
 const signUpFailure = function (error) {
   console.error(error)
   $('.my-input').val("")
-  $('#message').text('Error on sign up: email and/or password already token. Try again with different credentials.')
+  $('#message').show().text('Error on sign up: email and/or password already token. Try again with different credentials.').fadeOut(5000)
 }
 
 const signInSuccess = function (data) {
@@ -25,27 +25,27 @@ const signInSuccess = function (data) {
   console.log(data)
   store.user = data.user
   // console.log(store)
-  $('#message').text('Sucessfully signed In!')
+  $('#message').show().text('Sucessfully signed In!').fadeOut(5000)
 }
 
 const signInFailure = function (error) {
   console.error(error)
   $('.my-input').val("")
-  $('#message').text('Error on sign in: wrong email and/or password. Try again.')
+  $('#message').show().text('Error on sign in: wrong email and/or password. Try again.').fadeOut(5000)
 }
 
 const changePasswordSuccess = function (data) {
   // console.log(data)
   // console.log('Password sucessfully changed!')
   $('.my-input').val("")
-  $('#message').text('Password sucessfully changed!')
+  $('#message').show().text('Password sucessfully changed!').fadeOut(5000)
 }
 
 const changePasswordFailure = function (error) {
   console.log(error)
   // console.log('Password already token. Try again.')
   $('.my-input').val("")
-  $('#message').text('Password already token. Try again.')
+  $('#message').show().text('Password already token. Try again.').fadeOut(5000)
 }
 
 const signOutSuccess = function (data) {
@@ -56,14 +56,14 @@ const signOutSuccess = function (data) {
   // console.log(data)
   store.user = null
   // console.log('Signed out succesfully!')
-  $('#message').text('Signed out successfully!')
-  console.log(store.user)
+  $('#message').show().text('Signed out successfully!').fadeOut(5000)
+  // console.log(store.user)
 }
 
 const signOutFailure = function (error) {
   console.log(error)
   // console.log('Failure signing out.')
-  $('#message').text('Failure signing out.')
+  $('#message').show().text('Failure signing out.').fadeOut(5000)
 }
 
 module.exports = {
