@@ -38,14 +38,14 @@ const changePasswordSuccess = function (data) {
   // console.log(data)
   // console.log('Password sucessfully changed!')
   $('.my-input').val("")
-  $('#message').show().text('Password sucessfully changed!').fadeOut(5000)
+  $('#message_5').show().text('Password sucessfully changed!').fadeOut(5000)
 }
 
 const changePasswordFailure = function (error) {
   console.log(error)
   // console.log('Password already token. Try again.')
   $('.my-input').val("")
-  $('#message').show().text('Password already token. Try again.').fadeOut(5000)
+  $('#message_5').show().text('Password already token. Try again.').fadeOut(5000)
 }
 
 const signOutSuccess = function (data) {
@@ -56,14 +56,14 @@ const signOutSuccess = function (data) {
   // console.log(data)
   store.user = null
   // console.log('Signed out succesfully!')
-  $('#message').show().text('Signed out successfully!').fadeOut(5000)
+  $('#message_6').show().text('Signed out successfully!').fadeOut(5000)
   // console.log(store.user)
 }
 
 const signOutFailure = function (error) {
   console.log(error)
   // console.log('Failure signing out.')
-  $('#message').show().text('Failure signing out.').fadeOut(5000)
+  $('#message_6').show().text('Failure signing out.').fadeOut(5000)
 }
 
 module.exports = {
