@@ -2,14 +2,14 @@
 const store = require('../store')
 
 const signUpSuccess = function (data) {
-  console.log(data)
+  // console.log(data)
   // console.log('Sucessfully signed up!')
   $('.my-input').val("")
   $('#message').show().text('Sucessfully signed up!').fadeOut(5000)
 }
 
 const signUpFailure = function (error) {
-  console.error(error)
+  // console.error(error)
   $('.my-input').val("")
   $('#message').show().text('Error on sign up: email and/or password already token. Try again with different credentials.').fadeOut(5000)
 }
@@ -22,7 +22,7 @@ const signInSuccess = function (data) {
   $('.box').hide()
   $('.my-input').val("")
   // $('#sign-up').reset()
-  console.log(data)
+  // console.log(data)
   store.user = data.user
   // console.log(store)
   $('#message').show().text('Sucessfully signed In!').fadeOut(5000)

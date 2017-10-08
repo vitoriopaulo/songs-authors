@@ -43,7 +43,7 @@ const getOneSongSuccess = function (data) {
   $('.my-input').val("")
   // console.log(data)
   store.song = data.song
-  console.log(store)
+  // console.log(store)
   $('#message_1').show().text('Sucessfully get song.').fadeOut(5000)
 }
 
@@ -54,7 +54,7 @@ const getOneSongFailure = function (error) {
 }
 
 const addSongSuccess = function (data) {
-  console.log(data)
+  // console.log(data)
   // console.log('Password sucessfully changed!')
   $('.my-input').val("")
   $('#message_2').show().text('Song sucessfully added.').fadeOut(5000)
@@ -68,13 +68,13 @@ const addSongFailure = function (error) {
 }
 
 const updateSongSuccess = function (data) {
-  console.log(data)
+  // console.log(data)
   $('.my-input').val("")
   $('#message_3').show().text('Song updated succesfully.').fadeOut(5000)
 }
 
 const updateSongFailure = function (data) {
-  console.log(data)
+  // console.log(data)
   $('.my-input').val("")
   $('#message_3').show().text('Failure on updating song.').fadeOut(5000)
 }
