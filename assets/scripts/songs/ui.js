@@ -15,7 +15,7 @@ const getAllSongsSuccess = function (data) {
   console.log(data)
   // console.log('Sucessfully get all songs.')
   // $('.my-input').val("")
-  $('#message').show().text('Sucessfully get all songs.').fadeOut(5000)
+  $('#message').show().text('Sucessfully get all songs? Cool! Nope? Add songs to your list!').fadeOut(7500)
 }
 
 const getAllSongsFailure = function (error) {
