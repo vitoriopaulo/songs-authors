@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title> SONGS & AUTHORS </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+
+    <body class="container-fluid">
+
+<header>
+
+  <h1 class="title"> SONGS & AUTHORS </h1>
+
+</header>
+<br>
+<br>
+<br>
+<br>
+<!-- part of the code related to authentication -->
+
+<p id="message" class="message"> </p>
+<br>
+<br>
+      <form class="starting-page" id="sign-up">
+        <fieldset>
+          <legend>Sign up!</legend>
+          <input type="email" name="credentials[email]" placeholder="Your email here." class="my-input" autocomplete="off" required>
+          <br>
+          <br>
+          <input type="password" name="credentials[password]" placeholder="Your password here." class="my-input" autocomplete="off" required>
+          <br>
+          <br>
+          <input type="password" name="credentials[password_confirmation]" placeholder="Confirm password." class="my-input" autocomplete="off" required>
+          <br>
+          <br>
+          <button type="submit" name="submit" value="submit" class="btn btn-default button1">
+            Sign Up!</button>
+        </fieldset>
+      </form>
+
+      <br>
+      <br>
+
+      <form class="starting-page" id="sign-in">
+        <fieldset>
+          <legend>Sign In!</legend>
+          <input type="email" name="credentials[email]" placeholder="Your email here." class="my-input" autocomplete="off" required>
+          <br>
+          <br>
+          <input type="password" name="credentials[password]" placeholder="Your password here." class="my-input" autocomplete="off" required>
+          <br>
+          <br>
+          <button id="bt-sign-in" type="submit" name="submit" value="submit" class="btn btn-default button2">
+            Sign In!</button>
+        </fieldset>
+      </form>
+
+      <br>
+      <br>
+      <p id="message_6" class="message"> </p>
+      <br>
+      <br>
+
+      <form class="signed-in-page" id="get-all-songs">
+              <fieldset>
+                <button type="submit" name="submit" value="Type song author here." class="btn btn-default button5">
+                  Get all Songs</button>
+              </fieldset>
+            </form>
+          <br>
+
+      <ul class="signed-in-page" id="songs">
+      </ul>
+
+      <br>
+      <br>
+      <p id="message_1" class="message"> </p>
+      <br>
+      <br>
+
+      <form class="signed-in-page" id="get-song-by-id">
+              <fieldset>
+                <legend>Get one Song</legend>
+                <input type="text" name="song" placeholder="Type song id here." class="my-input" autocomplete="off" required>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-default button5">
+                  Get one Song</button>
+              </fieldset>
+            </form>
+      <br>
+      <br>
+
+      <ul class="signed-in-page" id="song">
+
+      </ul>
+      <br>
+      <br>
+      <p id="message_2" class="message"> </p>
+      <br>
+      <br>
+
+      <form class="signed-in-page" id="add-song">
+              <fieldset>
+                <legend>Add Song</legend>
+                <input type="text" name="song[title]" placeholder="Type song title here." class="my-input" autocomplete="off" required>
+                <br>
+                <br>
+                <input type="number" name="song[year]" placeholder="Type song year here." class="my-input" autocomplete="off" required>
+                <br>
+                <br>
+                <input type="text" name="song[authors]" placeholder="Type song authors here." class="my-input" autocomplete="off" required>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-default button5">
+                  Add Song</button>
+              </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <p id="message_3" class="message"> </p>
+            <br>
+            <br>
+
+      <form class="signed-in-page" id="update-song">
+              <fieldset>
+                <legend>Update Song</legend>
+                <input type="number" name="song[id]" placeholder="Type song id here." class="my-input" autocomplete="off" required>
+                <br>
+                <br>
+                <input type="text" name="song[title]" placeholder="Update song title here." class="my-input" autocomplete="off" required>
+                <br>
+                <br>
+                <input type="number" name="song[year]" placeholder="Update song year here." class="my-input" autocomplete="off" required>
+                <br>
+                <br>
+                <input type="text" name="song[authors]" placeholder="Update song authors here." class="my-input" autocomplete="off" required>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-default button5">
+                  Update Song</button>
+              </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <p id="message_4" class="message"> </p>
+            <br>
+            <br>
+
+      <form class="signed-in-page" id="delete-song">
+              <fieldset>
+                <legend>Delete Song</legend>
+                <input type="number" name="song[id]" placeholder="Type song id here." class="my-input" autocomplete="off" required>
+            <br>
+            <br>
+                <button type="submit" class="btn btn-default button5">
+                  Delete Song</button>
+              </fieldset>
+            </form>
+
+            <br>
+            <br>
+            <p id="message_5" class="message"> </p>
+            <br>
+            <br>
+
+<form class="signed-in-page" id="change-password">
+        <fieldset>
+          <legend>Change Password</legend>
+          <input type="password" name="passwords[old]" placeholder="Old password here." class="my-input" autocomplete="off" required>
+          <br>
+          <br>
+          <input type="password" name="passwords[new]" placeholder="New password here." class="my-input" autocomplete="off" required>
+          <br>
+          <br>
+          <button type="submit" name="submit" value="Change Password!" class="btn btn-default button5">
+            Change Password</button>
+        </fieldset>
+      </form>
+
+      <br>
+      <br>
+
+<form class="signed-in-page" id="sign-out">
+  <fieldset>
+    <button type="submit" name="submit" value="Sign Out!" class="btn btn-default button4">
+      Sign Out!</button>
+</fieldset>
+</form>
+
+<br>
+<br>
+
+<footer class="footer"> <p class="copyright"> Copyright 2017 :: Created with much &hearts;
+  by Vitorio Paulo for GA</p> </footer>
+    </body>
+</html>
